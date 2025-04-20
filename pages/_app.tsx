@@ -1,6 +1,5 @@
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
-import { useNetworkSync } from "@useelven/core";
 import { theme } from "../config/chakraTheme";
 import { SWRConfig } from "swr";
 import { useToast } from "@chakra-ui/react";
@@ -18,18 +17,6 @@ const GokaiDapp = ({ Component, pageProps }: AppProps) => {
     document.documentElement.lang = "en";
     setIsHydrated(true); // Set hydration to true after initial render
   }, []);
-
-  // Network Sync
-  useNetworkSync({
-    apiTimeout: "10000",
-    chainType: process.env.NEXT_PUBLIC_MULTIVERSX_CHAIN,
-    ...(process.env.NEXT_PUBLIC_MULTIVERSX_API
-      ? { apiAddress: process.env.NEXT_PUBLIC_MULTIVERSX_API }
-      : {}),
-    ...(process.env.NEXT_PUBLIC_WC_PROJECT_ID
-      ? { walletConnectV2ProjectId: process.env.NEXT_PUBLIC_WC_PROJECT_ID }
-      : {}),
-  });
 
   const toast = useToast();
 

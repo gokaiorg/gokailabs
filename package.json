@@ -25,7 +25,6 @@
     "@fontsource/poppins": "5.0.5",
     "@multiversx/sdk-core": "^13.0.0",
     "@netlify/plugin-nextjs": "^5.10.0",
-    "@useelven/core": "^0.23.1",
     "bignumber.js": "9.1.1",
     "buffer": "6.0.3",
     "crypto-browserify": "3.12.0",
