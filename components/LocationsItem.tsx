@@ -72,10 +72,10 @@ export const LocationsItem = ({ location }: LocationsItemProps) => {
         </Box>
       </Link>
       <Box
-        as="li"
+        as="span"
         display="flex"
         alignItems="center"
-        aria-label="Accommodations"
+        aria-label="Phone number"
       >
         📱
         <Box

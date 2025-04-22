@@ -32,13 +32,6 @@ const Links: Route[] = [
     title: "Weed Shop Premium Cannabis Edibles Menu",
     imageW: "18px",
   },
-  {
-    path: "/project/art-fate",
-    image: "/media/green-ghost-degen-weed-shop-menu-degen.png",
-    label: "Art Fate",
-    title: "Weed Shop Premium Cannabis Concentrates Menu",
-    imageW: "7px",
-  },
 ];
 
 export const NavProjectsBar = () => {

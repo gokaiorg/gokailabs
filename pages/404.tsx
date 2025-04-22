@@ -42,7 +42,7 @@ const ErrorPage: NextPage = () => {
         <Header>
           <NavHeader enabled={["auth"]} />
         </Header>
-        <HomeSectionTitle title="404 - You got lost bro!" />
+        <HomeSectionTitle title="404 - Oops, We've Lost the Digital Map!" />
         <Box
           display={"flex"}
           flexDirection={"column"}
@@ -62,7 +62,8 @@ const ErrorPage: NextPage = () => {
             fontWeight={"black"}
             mb={4}
           >
-            You should try something that keeps you focused.
+            Looks like our Paris-Phuket teleportation glitch sent this page to a
+            Web3 dimension—grab a coffee and head back to Gokai Labs’ homepage!
           </Text>
         </Box>
       </MainLayout>

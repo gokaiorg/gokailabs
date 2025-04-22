@@ -43,7 +43,7 @@ const WeedShopEdibles: NextPage = () => {
         />
         <meta
           property="og:image"
-          content="https://gokai.org/media/green-ghost-degen-weed-shop-cannabis-edibles-menu.webp"
+          content="https://gokai.org/media/amann-inkpiration-gokai-labs-creative-web-design-seo-agency.webp"
         />
         <meta property="og:image:width" content="2048" />
         <meta property="og:image:height" content="1366" />
@@ -58,7 +58,7 @@ const WeedShopEdibles: NextPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://gokai.org/media/green-ghost-degen-weed-shop-cannabis-edibles-menu.webp"
+          content="https://gokai.org/media/amann-inkpiration-gokai-labs-creative-web-design-seo-agency.webp"
         />
         <meta name="twitter:url" content="https://gokai.org/project/edibles" />
         <script
@@ -92,7 +92,7 @@ const WeedShopEdibles: NextPage = () => {
               backgroundColor="all.primary"
             >
               <Image
-                src="/media/green-ghost-degen-weed-shop-cannabis-edibles-menu.webp"
+                src="/media/amann-inkpiration-gokai-labs-creative-web-design-seo-agency.webp"
                 alt="Weed Shop Premium Cannabis Edibles Menu"
                 title="Weed Shop Premium Cannabis Edibles Menu"
                 width={2048}
@@ -119,11 +119,11 @@ const WeedShopEdibles: NextPage = () => {
                 backgroundColor="ghostVerse.dark.base"
                 transition="duration: 0.6"
                 _hover={{
-                  bg: "ghostVerse.green.lighter",
+                  bg: "all.transparent",
                   color: "black",
                 }}
               >
-                View Edibles Menu Image
+                View Image
               </Text>
             </Box>
             <AnimatePresence>
@@ -164,7 +164,7 @@ const WeedShopEdibles: NextPage = () => {
                     X
                   </Text>
                   <motion.img
-                    src="/media/green-ghost-degen-weed-shop-cannabis-edibles-menu.webp"
+                    src="/media/amann-inkpiration-gokai-labs-creative-web-design-seo-agency.webp"
                     alt="Weed Shop Premium Cannabis Edibles Menu"
                     title="Weed Shop Premium Cannabis Edibles Menu"
                     initial={{ scale: 0.5 }}

@@ -14,39 +14,31 @@ type Route = {
 const Links: Route[] = [
   {
     path: "/project/green-ghost",
-    image: "/media/buds-menu-weed-shop-green-ghost.webp",
+    image: "/media/green-ghost-gokai-labs-creative-web-design-seo-agency.webp",
     label: "Green Ghost",
-    title: "Weed Shop Premium Cannabis Buds Menu",
+    title: "Green Ghost Web Design",
     description:
       "Discover top-quality strains and products, expertly curated for your enjoyment and satisfaction.",
     imageW: "20px",
   },
   {
     path: "/project/ghostverse",
-    image: "/media/pre-rolls-menu-weed-shop-green-ghost.webp",
+    image: "/media/ghostverse-gokai-labs-creative-web-design-seo-agency.webp",
     label: "GhostVerse",
-    title: "Weed Shop Premium Cannabis Pre Rolls Menu",
+    title: "GhostVerse Web Design",
     description:
       "Enjoy perfectly rolled joints made from premium cannabis, ready to elevate your smoking experience instantly.",
     imageW: "8px",
   },
   {
     path: "/project/amann-inkspiration",
-    image: "/media/edibles-menu-weed-shop-green-ghost.webp",
+    image:
+      "/media/amann-inkspiration-gokai-labs-creative-web-design-seo-agency.webp",
     label: "Amann Inkspiration",
-    title: "Weed Shop Premium Cannabis Edibles Menu",
+    title: "Amann Inkspiration Web Design",
     description:
       "A curated selection of organic, locally sourced cannabis-infused treats like brownies, gummies, and artisanal cookies.",
     imageW: "18px",
-  },
-  {
-    path: "/project/art-fate",
-    image: "/media/concentrates-menu-weed-shop-green-ghost.webp",
-    label: "Art Fate",
-    title: "Weed Shop Premium Cannabis Concentrates Menu",
-    description:
-      "Menu offering premium cannabis extracts like hash, wax, kiev and oil. Elevate your experience with our potent, curated selection.",
-    imageW: "7px",
   },
 ];
 

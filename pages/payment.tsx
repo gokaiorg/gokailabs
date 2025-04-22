@@ -15,7 +15,6 @@ import {
 import Head from "next/head";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Link from "next/link";
 
 export const getServerSideProps: GetServerSideProps = async () => {
   return { props: {} };
@@ -145,43 +144,7 @@ const Payment: NextPage = () => {
                     borderColor: "all.secondary",
                   }}
                 >
-                  Thai QR
-                </Tab>
-                <Tab
-                  _selected={{
-                    bg: "ghostVerse.dark.lighter",
-                    color: "all.secondary",
-                    borderColor: "all.secondary",
-                  }}
-                >
-                  Russian QR
-                </Tab>
-                <Tab
-                  _selected={{
-                    bg: "ghostVerse.dark.lighter",
-                    color: "all.secondary",
-                    borderColor: "all.secondary",
-                  }}
-                >
                   Wise
-                </Tab>
-                <Tab
-                  _selected={{
-                    bg: "ghostVerse.dark.lighter",
-                    color: "all.secondary",
-                    borderColor: "all.secondary",
-                  }}
-                >
-                  Paypal
-                </Tab>
-                <Tab
-                  _selected={{
-                    bg: "ghostVerse.dark.lighter",
-                    color: "all.secondary",
-                    borderColor: "all.secondary",
-                  }}
-                >
-                  Binance
                 </Tab>
               </TabList>
               <TabPanels
@@ -192,69 +155,18 @@ const Payment: NextPage = () => {
               >
                 <TabPanel>
                   <Text>
-                    Scan the QR code below to pay quickly and securely with your
-                    mobile device.
-                  </Text>
-                  <Box mt={4} display="flex" justifyContent="center">
-                    <Image
-                      src="/media/thai-qr-payment-green-ghost.webp"
-                      alt="Thai QR Payment"
-                      width={200}
-                      height={200}
-                    />
-                  </Box>
-                  <Text>MRS. NATI DOUCHAMPS</Text>
-                </TabPanel>
-                <TabPanel>
-                  <Text>
-                    Scan the QR code below to pay quickly and securely with your
-                    mobile device.
-                  </Text>
-                  <Box mt={4} display="flex" justifyContent="center">
-                    <Image
-                      src="/media/russian-qr-payment-green-ghost.webp"
-                      alt="Russian QR Payment"
-                      width={200}
-                      height={200}
-                    />
-                  </Box>
-                </TabPanel>
-                <TabPanel>
-                  <Text>
                     Use Wise for international payments with low fees and
                     real-time rates.
                   </Text>
                   <Box mt={4} display="flex" justifyContent="center">
                     <Image
-                      src="/media/wise-qr-payment-green-ghost.webp"
+                      src="/media/wise-qr-payment-gokai-labs.webp"
                       alt="Wise QR Payment"
                       width={200}
                       height={200}
                     />
                   </Box>
                   <Text>@jeremyd240</Text>
-                </TabPanel>
-                <TabPanel>
-                  <Text>
-                    Pay securely with PayPal—just click below to complete your
-                    order!
-                  </Text>
-                  <Link
-                    href="http://paypal.me/greenghostdegen"
-                    passHref
-                    title="http://paypal.me/greenghostdegen"
-                  >
-                    http://paypal.me/greenghostdegen
-                  </Link>
-                </TabPanel>
-                <TabPanel>
-                  <Text>
-                    Pay with cryptocurrency (BTC, ETH, etc.) for fast, anonymous
-                    transactions.
-                  </Text>
-                  <Box mt={4} display="flex" justifyContent="center">
-                    Binance User ID: 81449832
-                  </Box>
                 </TabPanel>
               </TabPanels>
             </Tabs>

@@ -7,7 +7,7 @@ export const dappHostname = process.env.NEXT_PUBLIC_DAPP_HOST;
 
 // HTML metata and og tags, default values for MetaHead.tsx component
 export const defaultMetaTags = {
-  title: "Gokai Labs Best Degen Weed Shop and Delivery",
+  title: "Gokai Labs Creative Web Design & SEO Agency",
   description:
     "Gokai Labs: Your creative web design and SEO agency. We craft stunning websites and boost your online visibility with expert SEO strategies. Let's grow your brand!",
   shortname: "Gokai Labs",

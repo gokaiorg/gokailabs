@@ -7,28 +7,33 @@ import { Box, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
 import { HighlightPrimary } from "../components/HighlightPrimary";
-import Link from "next/link";
+import { TeamBlock } from "../components/TeamBlock";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export const getServerSideProps: GetServerSideProps = async () => {
   return { props: {} };
 };
 
-const BuyWeed: NextPage = () => {
+const About: NextPage = () => {
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 300], [0, -100]);
   return (
     <>
       <Head>
-        <title>About Cannabis Culture in Thailand | Gokai Labs</title>
+        <title>Creative Web Design & SEO in Paris & Phuket | Gokai Labs</title>
         <meta
           name="description"
-          content="Discover Green Ghost, a leading cannabis social club in Phuket, championing local culture, top-quality weed, and a thriving community for enthusiasts."
+          content="Learn about Gokai Labs, your Paris & Phuket agency for stunning web design, UX, and expert SEO. Discover our passion for AI-driven digital success!
+"
         />
         <meta
           property="og:title"
-          content="About Cannabis Culture in Thailand | Gokai Labs"
+          content="Creative Web Design & SEO in Paris & Phuket | Gokai Labs"
         />
         <meta
           property="og:description"
-          content="Discover Green Ghost, a leading cannabis social club in Phuket, championing local culture, top-quality weed, and a thriving community for enthusiasts."
+          content="Learn about Gokai Labs, your Paris & Phuket agency for stunning web design, UX, and expert SEO. Discover our passion for AI-driven digital success!
+"
         />
         <meta
           property="og:image"
@@ -39,11 +44,12 @@ const BuyWeed: NextPage = () => {
         <meta property="og:url" content="https://gokai.org/about" />
         <meta
           name="twitter:title"
-          content="About Cannabis Culture in Thailand | Gokai Labs"
+          content="Creative Web Design & SEO in Paris & Phuket | Gokai Labs"
         />
         <meta
           name="twitter:description"
-          content="Discover Green Ghost, a leading cannabis social club in Phuket, championing local culture, top-quality weed, and a thriving community for enthusiasts."
+          content="Learn about Gokai Labs, your Paris & Phuket agency for stunning web design, UX, and expert SEO. Discover our passion for AI-driven digital success!
+"
         />
         <meta
           name="twitter:image"
@@ -56,47 +62,66 @@ const BuyWeed: NextPage = () => {
           <NavHeader enabled={["auth"]} />
         </Header>
         <Box
-          display={"flex"}
-          flexDirection={"column"}
-          alignItems={"center"}
-          textAlign={"center"}
+          as="section"
+          aria-label="Banner"
+          position="relative"
+          height="100%"
+          width="100%"
+          overflow="hidden"
+          mb={10}
         >
-          <HomeSectionTitle title="About" />
-        </Box>
-        <Text
-          as="h2"
-          textAlign="center"
-          fontSize={{ base: 20 }}
-          lineHeight={1}
-          fontFamily="DMSansBlack"
-          my={4}
-        >
-          {"Nurturing Thailand's Cannabis Culture"}
-        </Text>
-        <Text
-          textAlign={"center"}
-          as="p"
-          fontSize={{ base: 30, lg: 40 }}
-          lineHeight={1}
-          fontFamily="DMSansRegular"
-        >
-          {
-            "At Green Ghost, we’re dedicated to supporting the Thai cannabis community by offering the best "
-          }
-          <Link
-            href="/weed"
-            passHref
-            color="all.primary"
-            title="Your Weed Guide to Cannabis Excellence"
+          <motion.div
+            style={{
+              y,
+              position: "absolute",
+              top: "-65%",
+              left: 0,
+              width: "100%",
+              height: "200%",
+              zIndex: -1,
+            }}
           >
-            <Box as="span" color="all.primary">
-              Weed
-            </Box>
-          </Link>
-          {
-            " across outdoor, greenhouse, and indoor varieties. Our mission is to help Thailand grow as a leading hub for premium cannabis."
-          }
-        </Text>
+            <Image
+              src="/gokai-labs-creative-web-design-seo-agency.webp"
+              alt="Contact Our Weed Shop Team To Order"
+              title="Contact Our Weed Shop Team To Order"
+              layout="fill"
+              objectFit="cover"
+              quality={75}
+              priority
+            />
+          </motion.div>
+          <Box
+            bg="rgba(0, 0, 0, 0.8)"
+            p={2}
+            display={"flex"}
+            flexDir={"column"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            h={"100%"}
+            minHeight={{ base: "auto", md: "400px" }}
+          >
+            <HomeSectionTitle title="About" />
+            <Text
+              as="p"
+              fontSize={{ base: 20, lg: 28 }}
+              lineHeight={{ base: "25px", md: "30px" }}
+              fontFamily="DMSansRegular"
+              mt={5}
+              textAlign={"center"}
+            >
+              At Gokai Labs, we redefine digital excellence from Paris and
+              Phuket. Our team crafts stunning websites, seamless UX, and
+              top-tier SEO, driven by AI personalization, short-form video, and
+              voice search trends. With a passion for creativity and data-driven
+              results, we empower brands to thrive online. Led by Jeremy
+              Douchamps, we blend innovation and strategy to deliver projects
+              that captivate and convert. Join us to transform your vision into
+              a digital masterpiece!
+            </Text>
+          </Box>
+        </Box>
+        <TeamBlock />
         <Text
           as="h2"
           textAlign="center"
@@ -105,21 +130,22 @@ const BuyWeed: NextPage = () => {
           fontFamily="DMSansBlack"
           mb={4}
         >
-          Green Ghost redefines the cannabis coffeeshop experience
+          Powering Innovation with Cutting-Edge Tools
         </Text>
         <Text
           textAlign={"center"}
           as="p"
-          fontSize={{ base: 30, lg: 40 }}
+          fontSize={{ base: 18, lg: 22 }}
           lineHeight={1}
           fontFamily="DMSansRegular"
         >
-          By blending top-notch weed with cutting-edge technology and crypto
-          rewards. Our unique concept integrates expertly crafted Thai-grown,
-          organic products with exclusive discounts and innovative rewards for
-          crypto enthusiasts. At Green Ghost, we’re dedicated to exceptional
-          quality and a distinctive experience that highlights our commitment to
-          excellence.
+          Gokai Labs leverages top-tier technologies to craft exceptional
+          digital experiences. From Figma and Photoshop for stunning designs to
+          Drupal, Shopify, and Next.js for robust websites, we master CMS, HTML,
+          JS, and CSS. Our expertise in Web3, crypto, and NFTs ensures
+          future-ready solutions. Based in Paris and Phuket, we blend tools like
+          these with AI-driven UX and SEO to deliver projects that captivate and
+          perform. Trust us to build your brand with the latest tech!
         </Text>
         <HighlightPrimary />
         <Text
@@ -129,8 +155,9 @@ const BuyWeed: NextPage = () => {
           lineHeight={1}
           fontFamily="DMSansRegular"
         >
-          Thanks for choosing us—where top-notch quality meets wallet-friendly
-          prices, with a dash of good vibes!
+          Let’s shape the future of your brand together—connect with Gokai Labs
+          to turn your vision into a digital reality that stands out and
+          succeeds!
         </Text>
         <Box position={"relative"} w="100%" h={{ base: "200px", lg: "600px" }}>
           <Image
@@ -147,4 +174,4 @@ const BuyWeed: NextPage = () => {
   );
 };
 
-export default BuyWeed;
+export default About;

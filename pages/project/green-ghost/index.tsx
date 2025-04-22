@@ -42,7 +42,7 @@ const GreenGhost: NextPage = () => {
         />
         <meta
           property="og:image"
-          content="https://gokai.org/media/green-ghost-degen-weed-shop-buds-menu.webp"
+          content="https://gokai.org/media/green-ghost-gokai-labs-creative-web-design-seo-agency.webp"
         />
         <meta property="og:image:width" content="2048" />
         <meta property="og:image:height" content="1366" />
@@ -57,7 +57,7 @@ const GreenGhost: NextPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://gokai.org/media/green-ghost-degen-weed-shop-buds-menu.webp"
+          content="https://gokai.org/media/green-ghost-gokai-labs-creative-web-design-seo-agency.webp"
         />
         <meta name="twitter:url" content="https://gokai.org/project/buds" />
         <script
@@ -92,7 +92,7 @@ const GreenGhost: NextPage = () => {
               backgroundColor="all.primary"
             >
               <Image
-                src="/media/green-ghost-degen-weed-shop-buds-menu.webp"
+                src="/media/green-ghost-gokai-labs-creative-web-design-seo-agency.webp"
                 alt="Weed Shop Premium Cannabis Buds Menu"
                 title="Weed Shop Premium Cannabis Buds Menu"
                 width={2048}
@@ -119,11 +119,11 @@ const GreenGhost: NextPage = () => {
                 backgroundColor="ghostVerse.dark.base"
                 transition="duration: 0.6"
                 _hover={{
-                  bg: "ghostVerse.green.lighter",
+                  bg: "all.transparent",
                   color: "black",
                 }}
               >
-                View Buds Menu Image
+                View Image
               </Text>
             </Box>
             <AnimatePresence>
@@ -164,7 +164,7 @@ const GreenGhost: NextPage = () => {
                     X
                   </Text>
                   <motion.img
-                    src="/media/green-ghost-degen-weed-shop-buds-menu.webp"
+                    src="/media/green-ghost-gokai-labs-creative-web-design-seo-agency.webp"
                     alt="Weed Shop Premium Cannabis Buds Menu"
                     title="Weed Shop Premium Cannabis Buds Menu"
                     initial={{ scale: 0.5 }}

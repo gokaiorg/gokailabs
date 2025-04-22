@@ -10,6 +10,7 @@ import { NavContact } from "../components/NavContact";
 import Image from "next/image";
 import { LocationsList } from "../components/LocationsList";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { TeamBlock } from "../components/TeamBlock";
 
 export const getServerSideProps: GetServerSideProps = async () => {
   return { props: {} };
@@ -18,15 +19,15 @@ export const getServerSideProps: GetServerSideProps = async () => {
 const contactJSONLD = {
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+66 93 645 9898",
+    telephone: "+66 94 948 6177",
     contactType: "Customer Service",
-    areaServed: "TH",
+    areaServed: "Worldwide",
     availableLanguage: "English",
   },
   sameAs: ["https://www.medium.com/gokailabs", "https://x.com/gokailabs"],
 };
 
-const BuyWeed: NextPage = () => {
+const Contact: NextPage = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 300], [0, -100]);
   return (
@@ -168,6 +169,8 @@ const BuyWeed: NextPage = () => {
               <NavContact />
             </Box>
           </Box>
+          <TeamBlock />
+
           <LocationsList />
         </Box>
       </MainLayout>
@@ -175,4 +178,4 @@ const BuyWeed: NextPage = () => {
   );
 };
 
-export default BuyWeed;
+export default Contact;
