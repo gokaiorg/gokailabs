@@ -6,17 +6,17 @@ export const NavProject = () => {
   const menuItems = [
     {
       href: "/project/green-ghost",
-      title: "Weed Shop Premium Cannabis Buds Menu",
+      title: "Green Ghost Web Design",
       label: "Green Ghost",
     },
     {
       href: "/project/ghostverse",
-      title: "Weed Shop Premium Cannabis Pre-Rolls Menu",
+      title: "GhostVerse Web Design",
       label: "GhostVerse",
     },
     {
       href: "/project/amann-inkspiration",
-      title: "Weed Shop Premium Cannabis Edibles Menu",
+      title: "Amann Inkspiration Web Design",
       label: "Amann Inkspiration",
     },
   ];
@@ -104,7 +104,7 @@ export const NavProject = () => {
             <Link
               href="/project"
               passHref
-              title="Weed & Cannabis Products Menu"
+              title="Explore Gokai Labs’ portfolio"
             >
               <LinkPrimary title="Discover Our Projects" />
             </Link>

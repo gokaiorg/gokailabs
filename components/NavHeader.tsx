@@ -15,15 +15,15 @@ export const NavHeader: FC<NavHeaderProps> = () => {
   const menuItems = [
     {
       href: "/project",
-      title: "Weed & Cannabis Products Menu",
+      title: "Explore Gokai Labs’ portfolio",
       label: "Projects",
-      ariaLabel: "Explore our menu",
+      ariaLabel: "View our projects",
     },
     {
       href: "/contact",
-      title: "Weed & Cannabis Products Menu",
+      title: "Reach Gokai Labs in Paris & Phuket",
       label: "Contact",
-      ariaLabel: "Contact us",
+      ariaLabel: "Get in touch",
     },
   ];
 

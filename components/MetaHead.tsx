@@ -95,9 +95,17 @@ export const MetaHead: FC<MetaHeadProps> = memo(({ metaName, metaUrl }) => {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": ["Store", "LocalBusiness"],
+            "@type": ["Organization", "ProfessionalService"],
             name: "Gokai Labs",
             address: [
+              {
+                "@type": "PostalAddress",
+                addressLocality: "Paris",
+                addressRegion: "Ile-de-France",
+                addressCountry: "FR",
+                postalCode: "75017",
+                streetAddress: "1 Square du Thimerais",
+              },
               {
                 "@type": "PostalAddress",
                 addressLocality: "Rawai",
@@ -105,22 +113,6 @@ export const MetaHead: FC<MetaHeadProps> = memo(({ metaName, metaUrl }) => {
                 addressCountry: "TH",
                 postalCode: "83130",
                 streetAddress: "26, 19 Wiset Rd",
-              },
-              {
-                "@type": "PostalAddress",
-                addressLocality: "Karon",
-                addressRegion: "Phuket",
-                addressCountry: "TH",
-                postalCode: "83100",
-                streetAddress: "452 Patak Rd",
-              },
-              {
-                "@type": "PostalAddress",
-                addressLocality: "Talat Yai",
-                addressRegion: "Phuket",
-                addressCountry: "TH",
-                postalCode: "83000",
-                streetAddress: "17 Thalang Rd",
               },
             ],
             description:
@@ -131,19 +123,27 @@ export const MetaHead: FC<MetaHeadProps> = memo(({ metaName, metaUrl }) => {
               "https://gokai.org/gokai-labs-creative-web-design-seo-agency.webp",
             priceRange: "$",
             openingHours: ["Mo-Su 08:00-02:00"],
-            telephone: "+66936459898",
+            telephone: "+66949486177",
             aggregateRating: {
               "@type": "AggregateRating",
               ratingValue: "5",
               reviewCount: "20",
               itemReviewed: {
-                "@type": ["Store", "LocalBusiness"],
+                "@type": ["Organization", "ProfessionalService"],
                 name: "Gokai Labs",
                 image:
                   "https://gokai.org/gokai-labs-creative-web-design-seo-agency.webp",
                 priceRange: "$",
-                telephone: "+66936459898",
+                telephone: "+66949486177",
                 address: [
+                  {
+                    "@type": "PostalAddress",
+                    addressLocality: "Paris",
+                    addressRegion: "Ile-de-France",
+                    addressCountry: "FR",
+                    postalCode: "75017",
+                    streetAddress: "1 Square du Thimerais",
+                  },
                   {
                     "@type": "PostalAddress",
                     addressLocality: "Rawai",
@@ -152,69 +152,8 @@ export const MetaHead: FC<MetaHeadProps> = memo(({ metaName, metaUrl }) => {
                     postalCode: "83130",
                     streetAddress: "26, 19 Wiset Rd",
                   },
-                  {
-                    "@type": "PostalAddress",
-                    addressLocality: "Karon",
-                    addressRegion: "Phuket",
-                    addressCountry: "TH",
-                    postalCode: "83100",
-                    streetAddress: "452 Patak Rd",
-                  },
-                  {
-                    "@type": "PostalAddress",
-                    addressLocality: "Talat Yai",
-                    addressRegion: "Phuket",
-                    addressCountry: "TH",
-                    postalCode: "83000",
-                    streetAddress: "17 Thalang Rd",
-                  },
                 ],
               },
-            },
-            servesCuisine: "Cannabis",
-            hasMenu: {
-              "@type": "Menu",
-              name: "Green Ghost Menu",
-              description:
-                "Explore Green Ghost's 🌿👻 complete cannabis menu, featuring premium buds, edibles, pre-rolls, accessories, and concentrates. Elevate your experience with our curated selection.",
-              url: "https://gokai.org/project",
-              hasMenuSection: [
-                {
-                  "@type": "MenuSection",
-                  name: "Buds Menu",
-                  description:
-                    "Explore Green Ghost's premium cannabis buds menu. Discover top-quality strains and products, expertly curated for your enjoyment and satisfaction.",
-                  url: "https://gokai.org/project/buds",
-                },
-                {
-                  "@type": "MenuSection",
-                  name: "Edibles Menu",
-                  description:
-                    "Explore Green Ghost's Edibles Menu, featuring a curated selection of organic, locally sourced cannabis-infused treats like brownies, gummies, and artisanal cookies.",
-                  url: "https://gokai.org/project/edibles",
-                },
-                {
-                  "@type": "MenuSection",
-                  name: "Degen Menu",
-                  description:
-                    "Discover Green Ghost's Concentrates Menu, offering premium cannabis extracts like hash, wax, kiev and oil. Elevate your experience with our potent, curated selection.",
-                  url: "https://gokai.org/project/concentrates",
-                },
-                {
-                  "@type": "MenuSection",
-                  name: "Gadgets Menu",
-                  description:
-                    "Explore Green Ghost's Accessories Menu. Find premium cannabis gadgets, from high-quality grinders to sleek bongs, and elevate your smoking experience today.",
-                  url: "https://gokai.org/project/gadgets",
-                },
-                {
-                  "@type": "MenuSection",
-                  name: "Pre-Rolls Menu",
-                  description:
-                    "Discover Green Ghost's Pre-Roll Menu. Enjoy perfectly rolled joints made from premium cannabis, ready to elevate your smoking experience instantly.",
-                  url: "https://gokai.org/project/pre-rolls",
-                },
-              ],
             },
           }),
         }}

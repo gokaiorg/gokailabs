@@ -8,10 +8,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     "/locations",
     "/projects",
     "/payment",
-    "/projects/green-ghost",
-    "/projects/ghostverse",
-    "/projects/amann-inkspiration",
-    "/projects/art-fate",
+    "/project/green-ghost",
+    "/project/ghostverse",
+    "/project/amann-inkspiration",
     "/sitemap",
   ];
   res.status(200).json(staticUrls);

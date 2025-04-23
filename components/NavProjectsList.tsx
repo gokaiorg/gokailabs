@@ -46,7 +46,7 @@ export const NavProjectsList = () => {
   return (
     <Box
       as="nav"
-      aria-label="Menu Navigation"
+      aria-label="Projects Navigation"
       mb={4}
       mx={{ base: "0", md: "0" }}
       overflow={{ base: "auto", md: "none" }}
@@ -58,7 +58,7 @@ export const NavProjectsList = () => {
     >
       <Box
         as="ul"
-        aria-label="Menu Navigation List"
+        aria-label="Projects Navigation List"
         display="flex"
         flexWrap={"wrap"}
         listStyleType="none"
@@ -77,7 +77,7 @@ export const NavProjectsList = () => {
               xl: "20%",
             }}
             as="li"
-            aria-label={`${link.label} Menu`}
+            aria-label={`${link.label} Web Design`}
             key={link.label}
             mb={2}
             borderRadius={10}

@@ -10,7 +10,7 @@ export const NavFooter = () => {
   const menuItems = [
     {
       href: "/project",
-      title: "View our Web Design projects",
+      title: "Explore Gokai Labs’ portfolio",
       label: "View our projects",
       ariaLabel: "View our projects",
     },
@@ -40,7 +40,7 @@ export const NavFooter = () => {
     },
     {
       href: "/contact",
-      title: "Contact Our Team To Elveate Your Brand",
+      title: "Reach Gokai Labs in Paris & Phuket",
       label: "Get in touch",
       ariaLabel: "Get in touch",
     },

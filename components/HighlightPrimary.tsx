@@ -112,8 +112,8 @@ export const HighlightPrimary = () => {
           <Link
             href="https://ghostverse.org/"
             passHref
-            title="Best Cannabis Social Club in Phuket Thailand"
-            aria-label="Join the club"
+            title="GhostVerse, The NFT DAO where ghosts govern."
+            aria-label="Join Ghost Clan"
           >
             <LinkSecondary title="Check the GhostVerse" />
           </Link>
