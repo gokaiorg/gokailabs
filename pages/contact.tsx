@@ -97,8 +97,8 @@ const Contact: NextPage = () => {
             >
               <Image
                 src="/gokai-labs-creative-web-design-seo-agency.webp"
-                alt="Contact Our Weed Shop Team To Order"
-                title="Contact Our Weed Shop Team To Order"
+                alt="Web Design & SEO Agency"
+                title="Web Design & SEO Agency"
                 layout="fill"
                 objectFit="cover"
                 quality={75}
@@ -170,7 +170,6 @@ const Contact: NextPage = () => {
             </Box>
           </Box>
           <TeamBlock />
-
           <LocationsList />
         </Box>
       </MainLayout>

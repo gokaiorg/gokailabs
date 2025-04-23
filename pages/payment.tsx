@@ -26,37 +26,37 @@ const Payment: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Make a payment for your cannabis order | Gokai Labs</title>
+        <title>Secure Payment Transactions for Web Services | Gokai Labs</title>
         <meta
           name="description"
-          content="Pay easily with Scan QR, Crypto, Wise, or PayPal. Secure, fast options for your weed orders at our shops!"
+          content="Make secure payments for Gokai Labs’ web design, UX, and SEO services. Enjoy hassle-free transactions for our Paris & Phuket digital solutions!"
         />
         <meta
           property="og:title"
-          content="Make a payment for your cannabis order | Gokai Labs"
+          content="Secure Payment Transactions for Web Services | Gokai Labs"
         />
         <meta
           property="og:description"
-          content="Pay easily with Scan QR, Crypto, Wise, or PayPal. Secure, fast options for your weed orders at our shops!"
+          content="Make secure payments for Gokai Labs’ web design, UX, and SEO services. Enjoy hassle-free transactions for our Paris & Phuket digital solutions!"
         />
         <meta
           property="og:image"
-          content="https://gokai.org/media/green-ghost-best-degen-weed-shop-payment.webp"
+          content="https://gokai.org/gokai-labs-creative-web-design-seo-agency.webp"
         />
         <meta property="og:image:width" content="2048" />
         <meta property="og:image:height" content="1366" />
         <meta property="og:url" content="https://gokai.org/payment" />
         <meta
           name="twitter:title"
-          content="Make a payment for your cannabis order | Gokai Labs"
+          content="Secure Payment Transactions for Web Services | Gokai Labs"
         />
         <meta
           name="twitter:description"
-          content="Pay easily with Scan QR, Crypto, Wise, or PayPal. Secure, fast options for your weed orders at our shops!"
+          content="Make secure payments for Gokai Labs’ web design, UX, and SEO services. Enjoy hassle-free transactions for our Paris & Phuket digital solutions!"
         />
         <meta
           name="twitter:image"
-          content="https://gokai.org/media/green-ghost-best-degen-weed-shop-payment.webp"
+          content="https://gokai.org/gokai-labs-creative-web-design-seo-agency.webp"
         />
         <meta name="twitter:url" content="https://gokai.org/payment" />
       </Head>
@@ -86,9 +86,9 @@ const Payment: NextPage = () => {
               }}
             >
               <Image
-                src="/media/green-ghost-best-degen-weed-shop-payment.webp"
-                alt="Contact Our Weed Shop Team To Order"
-                title="Contact Our Weed Shop Team To Order"
+                src="/gokai-labs-creative-web-design-seo-agency.webp"
+                alt="Web Design & SEO Agency"
+                title="Web Design & SEO Agency"
                 layout="fill"
                 objectFit="cover"
                 quality={75}

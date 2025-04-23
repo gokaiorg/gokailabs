@@ -11,22 +11,22 @@ export const getServerSideProps: GetServerSideProps = async () => {
   return { props: {} };
 };
 
-const WeedShopNearMe: NextPage = () => {
+const Locations: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Best Weed Shop Near Me in Phuket | Gokai Labs</title>
+        <title>Web Design & SEO in Paris & Phuket | Gokai Labs</title>
         <meta
           name="description"
-          content="Visit Green Ghost Weed Shop near me today for the best selection of locally sourced organic cannabis products. With multiple locations in Phuket, Thailand, we offer fast and convenient delivery options as well. Browse our menu and order online now!"
+          content="Discover Gokai Labs’ hubs in Paris & Phuket, delivering stunning web design, seamless UX, and expert SEO. Explore our global creative digital solutions!"
         />
         <meta
           property="og:title"
-          content="Best Weed Shop Near Me in Phuket | Gokai Labs"
+          content="Web Design & SEO in Paris & Phuket | Gokai Labs"
         />
         <meta
           property="og:description"
-          content="Visit Green Ghost Weed Shop near me today for the best selection of locally sourced organic cannabis products. With multiple locations in Phuket, Thailand, we offer fast and convenient delivery options as well. Browse our menu and order online now!"
+          content="Discover Gokai Labs’ hubs in Paris & Phuket, delivering stunning web design, seamless UX, and expert SEO. Explore our global creative digital solutions!"
         />
         <meta
           property="og:image"
@@ -37,11 +37,11 @@ const WeedShopNearMe: NextPage = () => {
         <meta property="og:url" content="https://gokai.org/locations" />
         <meta
           name="twitter:title"
-          content="Best Weed Shop Near Me in Phuket | Gokai Labs"
+          content="Web Design & SEO in Paris & Phuket | Gokai Labs"
         />
         <meta
           name="twitter:description"
-          content="Visit Green Ghost Weed Shop near me today for the best selection of locally sourced organic cannabis products. With multiple locations in Phuket, Thailand, we offer fast and convenient delivery options as well. Browse our menu and order online now!"
+          content="Discover Gokai Labs’ hubs in Paris & Phuket, delivering stunning web design, seamless UX, and expert SEO. Explore our global creative digital solutions!"
         />
         <meta
           name="twitter:image"
@@ -70,4 +70,4 @@ const WeedShopNearMe: NextPage = () => {
   );
 };
 
-export default WeedShopNearMe;
+export default Locations;
