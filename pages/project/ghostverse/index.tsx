@@ -14,32 +14,32 @@ export const getServerSideProps: GetServerSideProps = async () => {
   return { props: {} };
 };
 
-const WeedShopGadgets: NextPage = () => {
+const GhostVerse: NextPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => setIsOpen(!isOpen);
 
   const itemListJsonLd = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
+    "@type": "WebSite",
     name: "GhostVerse",
-    description: "Weed Shop Premium Cannabis Accessories Menu",
+    description: "GhostVerse Creative Web Design",
   };
 
   return (
     <>
       <Head>
-        <title>Weed Shop Premium Cannabis Gadgets Menu | Gokai Labs</title>
+        <title>GhostVerse Creative Web Design | Gokai Labs</title>
         <meta
           name="description"
-          content="Explore Green Ghost's Accessories Menu. Find premium cannabis gadgets, from high-quality grinders to sleek bongs, and elevate your smoking experience today."
+          content="Discover GhostVerse by Gokai Labs: a cutting-edge website blending Web3, stunning UX, and top-tier SEO with AI-driven innovation. Check it out!"
         />
         <meta
           property="og:title"
-          content="Weed Shop Premium Cannabis Gadgets Menu | Gokai Labs"
+          content="GhostVerse Creative Web Design | Gokai Labs"
         />
         <meta
           property="og:description"
-          content="Explore Green Ghost's Accessories Menu. Find premium cannabis gadgets, from high-quality grinders to sleek bongs, and elevate your smoking experience today."
+          content="Discover GhostVerse by Gokai Labs: a cutting-edge website blending Web3, stunning UX, and top-tier SEO with AI-driven innovation. Check it out!"
         />
         <meta
           property="og:image"
@@ -47,20 +47,26 @@ const WeedShopGadgets: NextPage = () => {
         />
         <meta property="og:image:width" content="2048" />
         <meta property="og:image:height" content="1366" />
-        <meta property="og:url" content="https://gokai.org/project/gadgets" />
+        <meta
+          property="og:url"
+          content="https://gokai.org/project/ghostverse"
+        />
         <meta
           name="twitter:title"
-          content="Weed Shop Premium Cannabis Gadgets Menu | Gokai Labs"
+          content="GhostVerse Creative Web Design | Gokai Labs"
         />
         <meta
           name="twitter:description"
-          content="Explore Green Ghost's Accessories Menu. Find premium cannabis gadgets, from high-quality grinders to sleek bongs, and elevate your smoking experience today."
+          content="Discover GhostVerse by Gokai Labs: a cutting-edge website blending Web3, stunning UX, and top-tier SEO with AI-driven innovation. Check it out!"
         />
         <meta
           name="twitter:image"
           content="https://gokai.org/media/ghostverse-gokai-labs-creative-web-design-seo-agency.webp"
         />
-        <meta name="twitter:url" content="https://gokai.org/project/gadgets" />
+        <meta
+          name="twitter:url"
+          content="https://gokai.org/project/ghostverse"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
@@ -93,8 +99,8 @@ const WeedShopGadgets: NextPage = () => {
             >
               <Image
                 src="/media/ghostverse-gokai-labs-creative-web-design-seo-agency.webp"
-                alt="Weed Shop Premium Cannabis Gadgets Menu"
-                title="Weed Shop Premium Cannabis Gadgets Menu"
+                alt="GhostVerse Creative Web Design"
+                title="GhostVerse Creative Web Design"
                 width={2048}
                 height={1366}
                 sizes="100%"
@@ -165,8 +171,8 @@ const WeedShopGadgets: NextPage = () => {
                   </Text>
                   <motion.img
                     src="/media/ghostverse-gokai-labs-creative-web-design-seo-agency.webp"
-                    alt="Weed Shop Premium Cannabis Gadgets Menu"
-                    title="Weed Shop Premium Cannabis Gadgets Menu"
+                    alt="GhostVerse Creative Web Design"
+                    title="GhostVerse Creative Web Design"
                     initial={{ scale: 0.5 }}
                     animate={{ scale: 1 }}
                     exit={{ scale: 0.5 }}
@@ -198,4 +204,4 @@ const WeedShopGadgets: NextPage = () => {
   );
 };
 
-export default WeedShopGadgets;
+export default GhostVerse;

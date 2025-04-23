@@ -20,18 +20,18 @@ const MenuFull: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Weed & Cannabis Products Menu | Gokai Labs</title>
+        <title>Web Design, UX & SEO in Paris & Phuket | Gokai Labs</title>
         <meta
           name="description"
-          content="Explore our Thailand cannabis menu: buds, edibles, concentrates, CBD & THC. Buy weed online with Green Ghost."
+          content="Explore Gokai Labs’ portfolio of stunning web design, seamless UX, and expert SEO projects from Paris & Phuket. Discover AI-driven, Web3-ready solutions!"
         />
         <meta
           property="og:title"
-          content="Weed & Cannabis Products Menu | Gokai Labs"
+          content="Web Design, UX & SEO in Paris & Phuket | Gokai Labs"
         />
         <meta
           property="og:description"
-          content="Explore our Thailand cannabis menu: buds, edibles, concentrates, CBD & THC. Buy weed online with Green Ghost."
+          content="Explore Gokai Labs’ portfolio of stunning web design, seamless UX, and expert SEO projects from Paris & Phuket. Discover AI-driven, Web3-ready solutions!"
         />
         <meta
           property="og:image"
@@ -42,11 +42,11 @@ const MenuFull: NextPage = () => {
         <meta property="og:url" content="https://gokai.org/project" />
         <meta
           name="twitter:title"
-          content="Weed & Cannabis Products Menu | Gokai Labs"
+          content="Web Design, UX & SEO in Paris & Phuket | Gokai Labs"
         />
         <meta
           name="twitter:description"
-          content="Explore our Thailand cannabis menu: buds, edibles, concentrates, CBD & THC. Buy weed online with Green Ghost."
+          content="Explore Gokai Labs’ portfolio of stunning web design, seamless UX, and expert SEO projects from Paris & Phuket. Discover AI-driven, Web3-ready solutions!"
         />
         <meta
           name="twitter:image"
@@ -81,8 +81,8 @@ const MenuFull: NextPage = () => {
             >
               <Image
                 src="/gokai-labs-creative-web-design-seo-agency.webp"
-                alt="Weed & Cannabis Products Menu"
-                title="Weed & Cannabis Products Menu"
+                alt="Web Design, UX & SEO in Paris & Phuket"
+                title="Web Design, UX & SEO in Paris & Phuket"
                 layout="fill"
                 objectFit="cover"
                 quality={75}

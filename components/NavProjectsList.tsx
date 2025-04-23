@@ -18,7 +18,7 @@ const Links: Route[] = [
     label: "Green Ghost",
     title: "Green Ghost Web Design",
     description:
-      "Discover top-quality strains and products, expertly curated for your enjoyment and satisfaction.",
+      "Vibrant website with bold user experience, expert SEO, and dynamic design for maximum engagement.",
     imageW: "20px",
   },
   {
@@ -27,7 +27,7 @@ const Links: Route[] = [
     label: "GhostVerse",
     title: "GhostVerse Web Design",
     description:
-      "Enjoy perfectly rolled joints made from premium cannabis, ready to elevate your smoking experience instantly.",
+      "Web3-powered website with stunning user experience, top-tier SEO, and innovative digital solutions.",
     imageW: "8px",
   },
   {
@@ -37,7 +37,7 @@ const Links: Route[] = [
     label: "Amann Inkspiration",
     title: "Amann Inkspiration Web Design",
     description:
-      "A curated selection of organic, locally sourced cannabis-infused treats like brownies, gummies, and artisanal cookies.",
+      "Website with seamless user experience, expert SEO, and creative design crafted for lasting impact.",
     imageW: "18px",
   },
 ];

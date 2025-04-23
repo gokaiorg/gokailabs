@@ -14,51 +14,51 @@ export const getServerSideProps: GetServerSideProps = async () => {
   return { props: {} };
 };
 
-const WeedShopEdibles: NextPage = () => {
+const AmannInkspiration: NextPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => setIsOpen(!isOpen);
 
   const itemListJsonLd = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
+    "@type": "WebSite",
     name: "Amann Inkspiration",
-    description: "Weed Shop Premium Cannabis Edibles Menu",
+    description: "Amann Inkspiration Creative Web Design",
   };
 
   return (
     <>
       <Head>
-        <title>Weed Shop Premium Cannabis Edibles Menu | Gokai Labs</title>
+        <title>Amann Inkspiration Creative Web Design | Gokai Labs</title>
         <meta
           name="description"
-          content="Explore Green Ghost's Edibles Menu, featuring a curated selection of organic, locally sourced cannabis-infused treats like brownies, gummies, and artisanal cookies."
+          content="Discover Amann Inkspiration by Gokai Labs: a stunning website with seamless UX and expert SEO, blending AI-driven design and Web3 innovation. Explore now!"
         />
         <meta
           property="og:title"
-          content="Weed Shop Premium Cannabis Edibles Menu | Gokai Labs"
+          content="Amann Inkspiration Creative Web Design | Gokai Labs"
         />
         <meta
           property="og:description"
-          content="Explore Green Ghost's Edibles Menu, featuring a curated selection of organic, locally sourced cannabis-infused treats like brownies, gummies, and artisanal cookies."
+          content="Discover Amann Inkspiration by Gokai Labs: a stunning website with seamless UX and expert SEO, blending AI-driven design and Web3 innovation. Explore now!"
         />
         <meta
           property="og:image"
-          content="https://gokai.org/media/amann-inkpiration-gokai-labs-creative-web-design-seo-agency.webp"
+          content="https://gokai.org/media/amann-inkspiration-gokai-labs-creative-web-design-seo-agency.webp"
         />
         <meta property="og:image:width" content="2048" />
         <meta property="og:image:height" content="1366" />
         <meta property="og:url" content="https://gokai.org/project/edibles" />
         <meta
           name="twitter:title"
-          content="Weed Shop Premium Cannabis Edibles Menu | Gokai Labs"
+          content="Amann Inkspiration Creative Web Design | Gokai Labs"
         />
         <meta
           name="twitter:description"
-          content="Explore Green Ghost's Edibles Menu, featuring a curated selection of organic, locally sourced cannabis-infused treats like brownies, gummies, and artisanal cookies."
+          content="Discover Amann Inkspiration by Gokai Labs: a stunning website with seamless UX and expert SEO, blending AI-driven design and Web3 innovation. Explore now!"
         />
         <meta
           name="twitter:image"
-          content="https://gokai.org/media/amann-inkpiration-gokai-labs-creative-web-design-seo-agency.webp"
+          content="https://gokai.org/media/amann-inkspiration-gokai-labs-creative-web-design-seo-agency.webp"
         />
         <meta name="twitter:url" content="https://gokai.org/project/edibles" />
         <script
@@ -92,9 +92,9 @@ const WeedShopEdibles: NextPage = () => {
               backgroundColor="all.primary"
             >
               <Image
-                src="/media/amann-inkpiration-gokai-labs-creative-web-design-seo-agency.webp"
-                alt="Weed Shop Premium Cannabis Edibles Menu"
-                title="Weed Shop Premium Cannabis Edibles Menu"
+                src="/media/amann-inkspiration-gokai-labs-creative-web-design-seo-agency.webp"
+                alt="Amann Inkspiration Creative Web Design"
+                title="Amann Inkspiration Creative Web Design"
                 width={2048}
                 height={1366}
                 sizes="100%"
@@ -164,9 +164,9 @@ const WeedShopEdibles: NextPage = () => {
                     X
                   </Text>
                   <motion.img
-                    src="/media/amann-inkpiration-gokai-labs-creative-web-design-seo-agency.webp"
-                    alt="Weed Shop Premium Cannabis Edibles Menu"
-                    title="Weed Shop Premium Cannabis Edibles Menu"
+                    src="/media/amann-inkspiration-gokai-labs-creative-web-design-seo-agency.webp"
+                    alt="Amann Inkspiration Creative Web Design"
+                    title="Amann Inkspiration Creative Web Design"
                     initial={{ scale: 0.5 }}
                     animate={{ scale: 1 }}
                     exit={{ scale: 0.5 }}
@@ -198,4 +198,4 @@ const WeedShopEdibles: NextPage = () => {
   );
 };
 
-export default WeedShopEdibles;
+export default AmannInkspiration;

@@ -20,25 +20,25 @@ const GreenGhost: NextPage = () => {
 
   const itemListJsonLd = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
+    "@type": "WebSite",
     name: "Green Ghost",
-    description: "Weed Shop Premium Cannabis Buds Menu",
+    description: "Green Ghost Creative Web Design",
   };
   return (
     <>
       <Head>
-        <title>Weed Shop Premium Cannabis Buds Menu | Gokai Labs</title>
+        <title>Green Ghost Creative Web Design | Gokai Labs</title>
         <meta
           name="description"
-          content="Explore Green Ghost's premium cannabis buds menu. Discover top-quality strains and products, expertly curated for your enjoyment and satisfaction."
+          content="Explore Green Ghost by Gokai Labs: a vibrant website with seamless UX and expert SEO, powered by AI-driven design and bold creativity. Discover now!"
         />
         <meta
           property="og:title"
-          content="Weed Shop Premium Cannabis Buds Menu | Gokai Labs"
+          content="Green Ghost Creative Web Design | Gokai Labs"
         />
         <meta
           property="og:description"
-          content="Explore Green Ghost's premium cannabis buds menu. Discover top-quality strains and products, expertly curated for your enjoyment and satisfaction."
+          content="Explore Green Ghost by Gokai Labs: a vibrant website with seamless UX and expert SEO, powered by AI-driven design and bold creativity. Discover now!"
         />
         <meta
           property="og:image"
@@ -46,20 +46,26 @@ const GreenGhost: NextPage = () => {
         />
         <meta property="og:image:width" content="2048" />
         <meta property="og:image:height" content="1366" />
-        <meta property="og:url" content="https://gokai.org/project/buds" />
+        <meta
+          property="og:url"
+          content="https://gokai.org/project/green-ghost"
+        />
         <meta
           name="twitter:title"
-          content="Weed Shop Premium Cannabis Buds Menu | Gokai Labs"
+          content="Green Ghost Creative Web Design | Gokai Labs"
         />
         <meta
           name="twitter:description"
-          content="Explore Green Ghost's premium cannabis buds menu. Discover top-quality strains and products, expertly curated for your enjoyment and satisfaction."
+          content="Explore Green Ghost by Gokai Labs: a vibrant website with seamless UX and expert SEO, powered by AI-driven design and bold creativity. Discover now!"
         />
         <meta
           name="twitter:image"
           content="https://gokai.org/media/green-ghost-gokai-labs-creative-web-design-seo-agency.webp"
         />
-        <meta name="twitter:url" content="https://gokai.org/project/buds" />
+        <meta
+          name="twitter:url"
+          content="https://gokai.org/project/green-ghost"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
@@ -93,8 +99,8 @@ const GreenGhost: NextPage = () => {
             >
               <Image
                 src="/media/green-ghost-gokai-labs-creative-web-design-seo-agency.webp"
-                alt="Weed Shop Premium Cannabis Buds Menu"
-                title="Weed Shop Premium Cannabis Buds Menu"
+                alt="Green Ghost Creative Web Design"
+                title="Green Ghost Creative Web Design"
                 width={2048}
                 height={1366}
                 sizes="100%"
@@ -165,8 +171,8 @@ const GreenGhost: NextPage = () => {
                   </Text>
                   <motion.img
                     src="/media/green-ghost-gokai-labs-creative-web-design-seo-agency.webp"
-                    alt="Weed Shop Premium Cannabis Buds Menu"
-                    title="Weed Shop Premium Cannabis Buds Menu"
+                    alt="Green Ghost Creative Web Design"
+                    title="Green Ghost Creative Web Design"
                     initial={{ scale: 0.5 }}
                     animate={{ scale: 1 }}
                     exit={{ scale: 0.5 }}

@@ -1,7 +1,7 @@
 import { ReviewItem } from "./ReviewItem";
 import { review } from "../config/reviews";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay, EffectCoverflow } from "swiper";
+import { Autoplay, EffectCoverflow } from "swiper";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -9,17 +9,13 @@ import "swiper/css/autoplay";
 
 import { Box, Text } from "@chakra-ui/react";
 
-// Initialize Swiper modules globally
-SwiperCore.use([Autoplay, EffectCoverflow]);
-
 export const Review = () => {
-  // Ensure 'review' is a valid array and not empty
   if (!Array.isArray(review) || review.length === 0) return null;
 
   return (
     <Box
       as="section"
-      aria-labelledby="Cannabis Customer Reviews"
+      aria-labelledby="Gokai Labs Partners Reviews"
       display="flex"
       flexDirection="column"
       alignItems="center"
@@ -58,6 +54,7 @@ export const Review = () => {
             modifier: 1,
             slideShadows: true,
           }}
+          modules={[Autoplay, EffectCoverflow]} // Pass modules here
         >
           {review.map((homeHeroItem, index) => (
             <SwiperSlide key={index}>
