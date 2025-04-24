@@ -32,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       ></Script>
       <noscript
         dangerouslySetInnerHTML={{
-          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQL8CG2"
+          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52G2C5XV"
         height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         }}
       ></noscript>
