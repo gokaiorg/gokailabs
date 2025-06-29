@@ -21,9 +21,9 @@ export const locations: Location[] = [
     slug: "paris",
     name: "Top Creative Web Agency in Paris",
     hours: "Everyday 14h-2h.",
-    tel: "+33619893218",
+    tel: "+33651368196",
     address: "1 Square du Thimerais, 75017 Paris, France",
-    addresLink: "https://maps.app.goo.gl/sMbFu5aQEVaXRZdDA",
+    addresLink: "https://g.co/kgs/RHP7Y39",
     reviewLink: "https://g.page/r/CYOr82juHaKhEBM/review",
     details: "Cannabis loundge. Cafe. PS5. 👻💨",
     description:
