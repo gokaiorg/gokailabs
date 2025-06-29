@@ -31,7 +31,7 @@ export const locations: Location[] = [
     descSeo:
       "Gokai Labs Paris: Creative web design & expert SEO. Stunning websites and top rankings from our Paris hub. Elevate your brand today!",
     mapLink:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.052292914441!2d2.2946603769076286!3d48.88781739863454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f99e4c3057f%3A0xd556d93ffc59e7c5!2s1%20Sq.%20du%20Thimerais%2C%2075017%20Paris%2C%20France!5e1!3m2!1sen!2sth!4v1745053589495!5m2!1sen!2sth",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.4472020886774!2d2.2972353!3d48.88781389999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e32ac849bd03c3%3A0xac76bb45e99d9b87!2sGokai%20Labs%20-%20Creative%20Web%20Design%20%26%20SEO%20Agency!5e0!3m2!1sen!2sfr!4v1751209677454!5m2!1sen!2sfr",
     videoLink: "https://www.youtube.com/embed/YVodYua9kBk",
     imagesOg: "green-ghost-best-degen-weed-shop-delivery-rawai.webp",
     images: [
