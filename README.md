@@ -1,72 +1,195 @@
-### Elven Tools Dapp
+# Gokai Labs
+## Creative Web Design, AI Analytics & SEO Agency
 
-- Docs: [elven.tools/docs/minter-dapp-introduction.html](https://www.elven.tools/docs/minter-dapp-introduction.html)
-- Dapp's React hooks and components [elven.tools/docs/dapp-react-hooks-and-components.html](https://www.elven.tools/docs/dapp-react-hooks-and-components.html)
-- Demo: [dapp-demo.elven.tools](https://dapp-demo.elven.tools)
-- Elven Tools intro (including the Dapp): [youtu.be/Jou5jn8PFz8](https://youtu.be/Jou5jn8PFz8)
+**Transform Your Online Presence with Gokai Labs**
 
-The Dapp is built using Nextjs and a couple of helpful tools. It allows you to interact with the MultiversX blockchain and smart contracts, and especially it is prepared for the [Elven Tools Smart Contract](https://github.com/ElvenTools/elven-nft-minter-sc). But you can always modify it and adjust it for your needs.
+We blend bold creativity with smart SEO to build stunning websites that captivate and convert. Based in Paris & Phuket, we deliver AI-driven digital solutions that elevate your brand.
 
-### It provides:
+---
 
-- Signing with 4 MultiversX blockchain [providers](https://docs.multiversx.com/sdk-and-tools/sdk-js/)
-  - Web Wallet
-  - xPortal mobile app
-  - MultiversX DeFi browser extension
-  - Ledger Nano
-- [Guarderd transactions](https://docs.multiversx.com/sdk-and-tools/sdk-dapp/internal-processes/guardians/#specifications-of-a-guarded-transaction)
-- React hooks for making transactions
-- React hooks for querying smart contracts
-- Tools and React hooks for app state synchronization
-- Optional API endpoint rewrites
-- Preconfigured UI based on [Chakra UI](https://chakra-ui.com/)
-- The template with sections mainly used on minter dapps (it will be developed further)
+## 🚀 About Gokai Labs
 
-### @useElven/core
+Gokai Labs is a cutting-edge digital agency specializing in:
 
-The template is based on `@useelven/core` npm library.
+- **Creative Web Design** - Stunning, conversion-focused websites
+- **AI Analytics** - Data-driven insights for better decision making  
+- **SEO Optimization** - Top rankings and organic traffic growth
+- **UX/UI Design** - Seamless user experiences that convert
+- **Web3 Integration** - Future-ready blockchain solutions
 
-- [@useelven/core docs](https://www.useElven.com) - React hooks for MultiversX blockchain
+### Our Expertise
 
-Besides that, there are custom React components and hooks that will help you with development.
+We leverage modern technologies to craft exceptional digital experiences:
 
-### Elven Tools Dapp docs
+- **Design Tools**: Figma, Photoshop, Creative Suite
+- **Development**: Next.js, React, TypeScript, Node.js
+- **CMS Platforms**: Drupal, Shopify, WordPress
+- **Frontend**: HTML5, CSS3, JavaScript, Chakra UI
+- **Analytics**: AI-powered analytics, Google Analytics 4
+- **SEO**: Technical SEO, Content Optimization, Voice Search
+- **Web3**: Blockchain integration, NFT platforms, DeFi
 
-For more docs on how to use it check the link above, and for more examples see: [elven.tools/docs/dapp-react-hooks-and-components.html](https://elven.tools/docs/dapp-react-hooks-and-components.html)
+---
 
-### Tracking the progress
+## 🏢 Global Presence
 
-- [Elven Tools Dapp kanban](https://github.com/orgs/ElvenTools/projects/2)
+**Paris, France** 🇫🇷  
+European hub for enterprise clients and luxury brands
 
-### How to start it locally:
-1. npm install -g elven-tools
-2. elven-tools init-dapp
-3. cd your-dapp-directory
-5. npm run dev
+**Phuket, Thailand** 🇹🇭  
+Asian Pacific operations and creative development
 
---- or ---
+---
 
-1. clone or download the repo code
-2. cd elven-tools-dapp
-3. npm install
-4. configure .env.local (you can copy the contents of the .env.example)
-6. npm run dev
+## 🛠 Technical Stack
 
-Check detailed docs on it here: [How to start with the Dapp](https://www.elven.tools/docs/how-to-start-with-the-dapp.html)
+This website is built with:
 
-### Main assumption for the dapp:
+- **Framework**: Next.js 15+ with TypeScript
+- **UI Library**: Chakra UI for responsive design
+- **Styling**: Emotion CSS-in-JS
+- **Animations**: Framer Motion
+- **State Management**: Zustand & Valtio
+- **Image Optimization**: Next.js Image component
+- **SEO**: Next-Sitemap for enhanced SEO
+- **Performance**: Optimized for Core Web Vitals
 
-- it works on Nextjs
-- it uses the newest version of [sdk-core](https://github.com/multiversx/mx-sdk-js-core) without the [sdk-dapp](https://github.com/multiversx/mx-sdk-dapp) library.
-- optionally it uses backend-side rewrites to hide the API endpoint, then the only exposed one is `/api`
-- it uses .env file - there is an example in the repo
-- it uses [chakra-ui](https://chakra-ui.com/)
+## 🚦 Getting Started
 
-More docs on it: [Minter Dapp introduction](https://www.elven.tools/docs/minter-dapp-introduction.html)
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-### Other tools
+### Installation
 
-- [useElven](https://www.useElven.com) - React core hooks for MultiversX blockchain
-- [elven.js](https://www.elvenjs.com) - standalone lite SDK for browsers without build steps
-- [Buildo Begins](https://github.com/xdevguild/buildo-begins) - CLI helper tools - interaction with APIs, smart contracts and protocol
-- [Nextjs Dapp Template](https://github.com/xdevguild/nextjs-dapp-template) - Open source Dapp template for the MultiversX blockchain (more general one).
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/gokaiorg/gokailabs.git
+   cd gokailabs
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Environment setup**
+   ```bash
+   cp .env.example .env.local
+   # Edit .env.local with your configuration
+   ```
+
+4. **Run development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Create production build
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+
+---
+
+## 📁 Project Structure
+
+```
+gokailabs/
+├── components/          # Reusable React components
+├── pages/              # Next.js pages and routing
+│   ├── api/           # API routes
+│   ├── project/       # Portfolio/case studies
+│   └── locations/     # Location-specific pages
+├── config/            # Configuration files
+├── public/            # Static assets and media
+└── styles/            # Global styles and themes
+```
+
+## 🎨 Key Features
+
+### ✨ **Modern Design System**
+- Responsive design across all devices
+- Consistent brand identity and typography
+- Smooth animations and micro-interactions
+
+### 🔍 **SEO Optimized**
+- Server-side rendering (SSR)
+- Optimized meta tags and structured data
+- XML sitemap generation
+- Core Web Vitals optimization
+
+### ⚡ **Performance First**
+- Image optimization and lazy loading
+- Code splitting and tree shaking
+- Minimal bundle size
+- Fast loading times
+
+### 📊 **Analytics Ready**
+- AI-driven user behavior tracking
+- Conversion funnel optimization
+- A/B testing capabilities
+
+---
+
+## 🌟 Our Work
+
+### Featured Projects
+
+- **[Green Ghost](https://green.gd)** - Cannabis e-commerce platform with advanced SEO
+- **[GhostVerse](https://ghostverse.org)** - Web3 NFT community platform  
+- **Amann Inkspiration** - Luxury tattoo studio brand identity
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to improve our open-source components:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📞 Contact & Services
+
+**Ready to transform your digital presence?**
+
+- 🌐 **Website**: [gokai.org](https://gokai.org)
+- 📧 **Email**: hello@gokai.org
+- 💼 **LinkedIn**: [linkedin.com/company/gokailabs](https://linkedin.com/company/gokailabs)
+
+### Services Available:
+- Web Design & Development
+- E-commerce Solutions
+- SEO & Digital Marketing
+- AI Analytics Implementation
+- Brand Identity & UX Design
+- Web3 & Blockchain Integration
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- UI components by [Chakra UI](https://chakra-ui.com/)
+- Animations by [Framer Motion](https://www.framer.com/motion/)
+- Hosted with performance optimization
+
+---
+
+**© 2024 Gokai Labs. Crafting digital experiences that captivate and convert.**
