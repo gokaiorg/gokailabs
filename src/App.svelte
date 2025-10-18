@@ -20,7 +20,8 @@
     type: '' // 'success' or 'error'
   });
 
-  async function handleSubmit() {
+  async function handleSubmit(event) {
+    event.preventDefault();
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       formStatus = {
@@ -330,7 +331,7 @@
           method="POST" 
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          on:submit|preventDefault={handleSubmit}
+          onsubmit={handleSubmit}
         >
           <!-- Hidden form-name field for Netlify -->
           <input type="hidden" name="form-name" value="contact">

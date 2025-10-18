@@ -3,18 +3,13 @@
   command = "npm run build"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
 
 # Contact form configuration
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
-
-[[redirects]]
-  from = "/old-page"
-  to = "/new-page"
-  status = 301
 
 # SPA fallback
 [[redirects]]
