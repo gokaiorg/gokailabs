@@ -1,0 +1,84 @@
+{
+  "site": {
+    "title": "Gokai Labs"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "🚀 Award-Winning Agency",
+    "title": "We Build Digital Experiences That Matter",
+    "subtitle": "We create beautiful, functional, and scalable digital products and Artificial Intelligence solutions, including AI agents, that drive results. From concept to launch, we're your partner in digital success."
+  },
+  "cta": {
+    "getStarted": "Get Started",
+    "viewWork": "View Our Work"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We offer comprehensive digital and Artificial Intelligence solutions, including AI agents, to help your business grow.",
+    "webDesign": {
+      "title": "Web Design",
+      "description": "Creating beautiful, user-friendly websites that captivate your audience and drive conversions."
+    },
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "Building robust, scalable web applications with modern technologies and best practices."
+    },
+    "seo": {
+      "title": "SEO Optimization",
+      "description": "Improving your search engine rankings to increase visibility and attract more organic traffic."
+    },
+    "branding": {
+      "title": "Branding & Identity",
+      "description": "Developing cohesive brand identities that resonate with your target audience and build trust."
+    },
+    "uiux": {
+      "title": "UI/UX Design",
+      "description": "Designing intuitive user interfaces and experiences that delight users and improve engagement."
+    },
+    "marketing": {
+      "title": "Digital Marketing",
+      "description": "Strategic marketing campaigns that connect with your audience and drive measurable results."
+    }
+  },
+  "stats": {
+    "projects": "Projects Completed",
+    "clients": "Happy Clients",
+    "experience": "Years Experience",
+    "satisfaction": "Client Satisfaction"
+  },
+  "work": {
+    "title": "Our Work",
+    "subtitle": "Explore some of our recent digital and AI-powered projects and see how we've helped businesses succeed."
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it - hear from some of our satisfied clients."
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind? Let's discuss how we can help."
+  },
+  "form": {
+    "name": "Your Name",
+    "email": "Email Address",
+    "message": "Your Message",
+    "namePlaceholder": "John Doe",
+    "emailPlaceholder": "you@example.com",
+    "messagePlaceholder": "Tell us about your project...",
+    "sendMessage": "Send Message"
+  },
+  "footer": {
+    "description": "Building digital experiences and Artificial Intelligence solutions, including AI agents, that drive results and create lasting impact for businesses worldwide.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "rights": "All rights reserved."
+  },
+  "learnMore": "Learn more →"
+}

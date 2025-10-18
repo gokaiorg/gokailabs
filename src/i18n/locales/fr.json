@@ -1,0 +1,84 @@
+{
+  "site": {
+    "title": "Gokai Labs"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "work": "Projets",
+    "testimonials": "Témoignages",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "🚀 Agence Récompensée",
+    "title": "Nous Construisons des Expériences Numériques qui Comptent",
+    "subtitle": "Nous créons des produits numériques beaux, fonctionnels et évolutifs ainsi que des solutions d'Intelligence Artificielle, y compris des agents IA, qui génèrent des résultats. Du concept au lancement, nous sommes votre partenaire pour le succès numérique."
+  },
+  "cta": {
+    "getStarted": "Commencer",
+    "viewWork": "Voir Nos Réalisations"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Nous proposons des solutions numériques et d'Intelligence Artificielle complètes, y compris des agents IA, pour aider votre entreprise à se développer.",
+    "webDesign": {
+      "title": "Design Web",
+      "description": "Création de sites web beaux et conviviaux qui captivent votre audience et génèrent des conversions."
+    },
+    "webDevelopment": {
+      "title": "Développement Web",
+      "description": "Construction d'applications web robustes et évolutives avec des technologies modernes et les meilleures pratiques."
+    },
+    "seo": {
+      "title": "Optimisation SEO",
+      "description": "Amélioration de votre classement dans les moteurs de recherche pour augmenter la visibilité et attirer plus de trafic organique."
+    },
+    "branding": {
+      "title": "Marque & Identité",
+      "description": "Développement d'identités de marque cohérentes qui résonnent avec votre public cible et créent la confiance."
+    },
+    "uiux": {
+      "title": "Design UI/UX",
+      "description": "Conception d'interfaces utilisateur intuitives et d'expériences qui ravissent les utilisateurs et améliorent l'engagement."
+    },
+    "marketing": {
+      "title": "Marketing Numérique",
+      "description": "Campagnes marketing stratégiques qui se connectent avec votre audience et génèrent des résultats mesurables."
+    }
+  },
+  "stats": {
+    "projects": "Projets Réalisés",
+    "clients": "Clients Satisfaits",
+    "experience": "Années d'Expérience",
+    "satisfaction": "Satisfaction Client"
+  },
+  "work": {
+    "title": "Nos Réalisations",
+    "subtitle": "Découvrez quelques-uns de nos projets numériques et alimentés par l'IA récents et voyez comment nous avons aidé les entreprises à réussir."
+  },
+  "testimonials": {
+    "title": "Ce Que Disent Nos Clients",
+    "subtitle": "Ne nous croyez pas sur parole - écoutez nos clients satisfaits."
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Vous avez un projet en tête ? Discutons de comment nous pouvons vous aider."
+  },
+  "form": {
+    "name": "Votre Nom",
+    "email": "Adresse Email",
+    "message": "Votre Message",
+    "namePlaceholder": "Jean Dupont",
+    "emailPlaceholder": "vous@exemple.com",
+    "messagePlaceholder": "Parlez-nous de votre projet...",
+    "sendMessage": "Envoyer le Message"
+  },
+  "footer": {
+    "description": "Construire des expériences numériques et des solutions d'Intelligence Artificielle, y compris des agents IA, qui génèrent des résultats et créent un impact durable pour les entreprises du monde entier.",
+    "quickLinks": "Liens Rapides",
+    "contactInfo": "Informations de Contact",
+    "rights": "Tous droits réservés."
+  },
+  "learnMore": "En savoir plus →"
+}

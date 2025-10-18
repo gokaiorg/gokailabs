@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block access to sensitive files and directories
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /dist/
+Disallow: /*.json$
+
+# Allow access to static assets
+Allow: /src/assets/
+
+# Sitemap location
+Sitemap: https://gokai.org/sitemap.xml

@@ -1,0 +1,59 @@
+# Gokai Labs - Production Website Redirects
+# Place this .htaccess file in your public_html/ directory on gokai.org
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect old pages to new SPA sections (301 Permanent Redirects)
+
+# Main Pages
+Redirect 301 /about https://gokai.org/#about
+Redirect 301 /contact https://gokai.org/#contact
+
+# Projects/Pages
+Redirect 301 /project https://gokai.org/#work
+Redirect 301 /projects https://gokai.org/#work
+
+# Individual Project Pages → Projects Section
+Redirect 301 /project/green-ghost https://gokai.org/#work
+Redirect 301 /project/ghostverse https://gokai.org/#work
+Redirect 301 /project/amann-inkspiration https://gokai.org/#work
+
+# Locations → Contact Section (where office addresses are listed)
+Redirect 301 /locations https://gokai.org/#contact
+Redirect 301 /locations/paris https://gokai.org/#contact
+Redirect 301 /locations/phuket https://gokai.org/#contact
+
+# Payment → Contact (for inquiries)
+Redirect 301 /payment https://gokai.org/#contact
+
+# Sitemap
+Redirect 301 /sitemap https://gokai.org/sitemap.xml
+
+# Handle trailing slashes (optional but good practice)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+# Security headers (optional but recommended)
+<IfModule mod_headers.c>
+  Header always set X-Frame-Options DENY
+  Header always set X-Content-Type-Options nosniff
+  Header always set Referrer-Policy strict-origin-when-cross-origin
+</IfModule>
+
+# Gzip compression (optional but recommended)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
