@@ -22,11 +22,43 @@
 
   async function handleSubmit(event) {
     event.preventDefault();
+
+    // Security: Input validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       formStatus = {
         loading: false,
         message: "Please fill in all fields.",
+        type: "error",
+      };
+      return;
+    }
+
+    // Security: Validate input length and format to prevent abuse
+    if (formData.name.length > 100) {
+      formStatus = {
+        loading: false,
+        message: "Name must be less than 100 characters.",
+        type: "error",
+      };
+      return;
+    }
+
+    if (formData.email.length > 100 || !emailRegex.test(formData.email)) {
+      formStatus = {
+        loading: false,
+        message: "Please enter a valid email address.",
+        type: "error",
+      };
+      return;
+    }
+
+    if (formData.message.length > 2000) {
+      formStatus = {
+        loading: false,
+        message: "Message must be less than 2000 characters.",
         type: "error",
       };
       return;
@@ -442,6 +474,7 @@
                   type="text"
                   id="name"
                   name="name"
+                  maxlength="100"
                   bind:value={formData.name}
                   class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder={$_("form.namePlaceholder")}
@@ -458,6 +491,7 @@
                   type="email"
                   id="email"
                   name="email"
+                  maxlength="100"
                   bind:value={formData.email}
                   class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder={$_("form.emailPlaceholder")}
@@ -475,6 +509,7 @@
                 id="message"
                 name="message"
                 rows="4"
+                maxlength="2000"
                 bind:value={formData.message}
                 class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 placeholder={$_("form.messagePlaceholder")}
