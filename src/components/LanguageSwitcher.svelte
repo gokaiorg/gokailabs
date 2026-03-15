@@ -19,7 +19,7 @@
       </span>
     {:else}
       <button 
-        class="px-3 py-1 hover:bg-gray-800 transition-colors"
+        class="px-3 py-1 hover:bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 transition-colors"
         on:click={() => setLanguage(lang.code)}
         aria-label="Switch to {lang.code === 'en' ? 'English' : 'Français'}"
       >
