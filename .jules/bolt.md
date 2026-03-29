@@ -1,3 +1,6 @@
 ## 2024-05-18 - [Statically Importing Default Locale]
 **Learning:** In applications using `svelte-i18n` (or similar i18n libraries), relying solely on dynamic imports (`import()`) for all locale files blocks the initial rendering of the application until the default locale file is fetched over the network and parsed.
 **Action:** Always statically import the primary/default locale file (e.g., `import en from './locales/en.json'`) to bundle it with the main JavaScript chunk. This eliminates the network round-trip requirement for the default language and allows synchronous, immediate rendering of the page, drastically improving First Contentful Paint (FCP). Secondary languages should remain dynamic to keep the initial bundle small.
+## 2024-05-18 - [Optimizing Render Allocations in Svelte Templates]
+**Learning:** Using `Array(n)` within Svelte `{#each}` blocks (e.g., `{#each Array(rating) as _}`) causes a new array to be allocated on every re-render of the component, which can lead to unnecessary memory pressure and garbage collection overhead, especially in large lists.
+**Action:** Replace dynamic array allocations in templates with a static constant array (e.g., `const MAX_STARS = [1, 2, 3, 4, 5];`) defined outside the render scope, and use conditional logic (`{#if star <= rating}`) inside the `{#each}` block to control the rendering.
