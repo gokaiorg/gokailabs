@@ -1,0 +1,4 @@
+## 2025-02-14 - [Missing Security Headers - Defense in Depth]
+**Vulnerability:** The application was missing crucial security headers, specifically Content-Security-Policy (CSP), Strict-Transport-Security (HSTS), and Permissions-Policy in its `netlify.toml` and `.htaccess` deployment configurations.
+**Learning:** Modern web deployments often omit security headers by default to favor compatibility, leaving SPAs vulnerable to XSS and data exfiltration since no restrictions exist on executable scripts, image sources, or connected domains.
+**Prevention:** Implement strict CSP, HSTS, and Permissions-Policy at the server/hosting layer by default for all new environments. In particular, define safe origins for external assets (`img-src`), allowed APIs (`connect-src`), and scripts (`script-src`), strictly restricting them down to what is strictly necessary.
