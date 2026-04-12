@@ -1,3 +1,7 @@
-## 2024-05-18 - [Statically Importing Default Locale]
-**Learning:** In applications using `svelte-i18n` (or similar i18n libraries), relying solely on dynamic imports (`import()`) for all locale files blocks the initial rendering of the application until the default locale file is fetched over the network and parsed.
-**Action:** Always statically import the primary/default locale file (e.g., `import en from './locales/en.json'`) to bundle it with the main JavaScript chunk. This eliminates the network round-trip requirement for the default language and allows synchronous, immediate rendering of the page, drastically improving First Contentful Paint (FCP). Secondary languages should remain dynamic to keep the initial bundle small.
+## 2024-06-25 - Svelte Dynamic Array Allocation in Templates
+**Learning:** Using `Array(n)` inside Svelte `{#each}` blocks creates a new array object on every render, causing unnecessary memory allocation and garbage collection overhead.
+**Action:** Replace dynamic array creation in templates with a hoisted static constant array and use conditional rendering `{#if}` within the `{#each}` loop instead.
+
+## 2024-06-25 - Redundant Regex Compilation in Event Handlers
+**Learning:** Regex literals inside event handlers like `handleSubmit` are recompiled on every invocation, adding unnecessary CPU overhead.
+**Action:** Hoist regex literals to the component/module scope when they do not depend on dynamic local state.
