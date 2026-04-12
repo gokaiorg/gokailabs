@@ -1,3 +1,6 @@
 ## 2024-05-14 - Improve dynamic form feedback accessibility
 **Learning:** Svelte's conditional rendering (`{#if formStatus.message}`) for form responses visually appears for sighted users, but screen readers may miss the newly injected text entirely. The message div needs `role="status"` and `aria-live="polite"` so screen readers will announce the update. Also, "Sending..." text on a button isn't sufficient without a visual loading indicator (spinner) for better user feedback, and keyboard focus states are crucial for interactive elements.
 **Action:** Always wrap dynamically inserted success/error messages in an element with `role="status"` and `aria-live="polite"`. Add visual spinners and strong `focus-visible` styling to form buttons.
+## 2025-02-12 - Prevent Focus Loss on State Changes
+**Learning:** In interactive components like Language Switchers or Toggle Buttons, changing an element's HTML tag based on state (e.g., swapping `<button>` to `<span>` when selected) causes screen readers and keyboard users to lose focus.
+**Action:** Always maintain the interactive HTML element (like `<button>`) regardless of its selected state. Instead of altering the DOM element, use `aria-pressed="true"` to indicate the selected state and use CSS classes for visual differences while preserving focus (`focus-visible:ring-2` etc).
