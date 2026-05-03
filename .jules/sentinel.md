@@ -1,0 +1,4 @@
+## 2024-05-04 - [Content Security Policy Implementation]
+**Vulnerability:** The application was missing a Content-Security-Policy (CSP) header, leaving it vulnerable to XSS and data injection attacks.
+**Learning:** Adding a CSP required careful consideration of external dependencies. The application explicitly requires `unsafe-inline` for styles and scripts (due to Svelte and Google Tag Manager). External assets load from multiple domains (`green.gd`, `art-fate.com`, `amann-inkspiration.com`, `ghostverse.org`, `storage.googleapis.com`), and Google Analytics requires connection to `region1.google-analytics.com`.
+**Prevention:** Future architectural changes or third-party integrations must be accompanied by corresponding updates to the CSP in both `netlify.toml` and `.htaccess`. Using strict, verified domains prevents the accidental inclusion of untrusted endpoints.
