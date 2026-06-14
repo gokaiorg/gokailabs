@@ -225,7 +225,7 @@
             <LanguageSwitcher />
           </div>
           <button
-            class="md:hidden text-gray-300"
+            class="md:hidden text-gray-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md"
             aria-label="Toggle navigation menu"
           >
             <svg
