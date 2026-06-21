@@ -1,3 +1,6 @@
 ## 2024-05-18 - [Statically Importing Default Locale]
 **Learning:** In applications using `svelte-i18n` (or similar i18n libraries), relying solely on dynamic imports (`import()`) for all locale files blocks the initial rendering of the application until the default locale file is fetched over the network and parsed.
 **Action:** Always statically import the primary/default locale file (e.g., `import en from './locales/en.json'`) to bundle it with the main JavaScript chunk. This eliminates the network round-trip requirement for the default language and allows synchronous, immediate rendering of the page, drastically improving First Contentful Paint (FCP). Secondary languages should remain dynamic to keep the initial bundle small.
+## 2026-06-21 - [Hoist Regular Expressions]
+**Learning:** Defining regular expressions inside frequently called functions (like event handlers or loop bodies) causes the JavaScript engine to redundantly re-compile and allocate the regex object every time the function is executed.
+**Action:** Always hoist regular expression literals out of frequently called functions into the module scope when working with Svelte components or general JavaScript to avoid unnecessary compilation and allocation overhead.
