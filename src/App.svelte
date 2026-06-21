@@ -7,6 +7,9 @@
 
   const currentYear = new Date().getFullYear();
 
+  // Performance: Hoist regex to avoid per-submission allocation/compilation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   // Form handling
   let formData = $state({
     name: "",
@@ -22,9 +25,6 @@
 
   async function handleSubmit(event) {
     event.preventDefault();
-
-    // Security: Input validation regex
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
