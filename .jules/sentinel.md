@@ -1,0 +1,4 @@
+## 2024-06-28 - Missing Content Security Policy in Server Configurations
+**Vulnerability:** The application was missing critical security headers like Content-Security-Policy (CSP), Strict-Transport-Security (HSTS), and Permissions-Policy in its netlify.toml and .htaccess files, leaving it vulnerable to XSS and data injection.
+**Learning:** Default server configurations often omit robust security headers. It's crucial to explicitly define a strict CSP that explicitly allows necessary external domains (like Google Tag Manager, Google Analytics, and external image domains) while restricting everything else.
+**Prevention:** Always verify server configurations (`netlify.toml`, `.htaccess`, `nginx.conf`) for security headers early in the development lifecycle and establish a strict baseline CSP.
